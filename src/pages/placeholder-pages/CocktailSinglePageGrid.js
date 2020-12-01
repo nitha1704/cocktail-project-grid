@@ -15,9 +15,10 @@ const CocktailSinglePageGrid = () => {
     setLoading(true);
 
     try {
+
       const data = await fetch(`${url}${id}`).then((res) => res.json());
       const { drinks } = data;
-      console.log(drinks);
+
       if (drinks) {
         const newDrink = drinks.map((item) => {
           return {
@@ -44,6 +45,7 @@ const CocktailSinglePageGrid = () => {
       setLoading(false);
     } catch (error) {
       console.log(error);
+      setSingleCocktail(null);
       setLoading(false);
     }
   },[id]);
@@ -57,10 +59,15 @@ const CocktailSinglePageGrid = () => {
   }
 
   if (!singleCocktail) {
-    return <h1>No Cocktail Matched Your Search Criteria</h1>;
+    return (
+      <div className="no-cocktail-match">
+        <div className="wrap-no-cocktail-match">
+          No Cocktail Matched Your Search Criteria
+        </div>
+      </div>
+    );
   }
 
-  console.log(singleCocktail);
   const {
     name,
     thumbnail,
