@@ -1,0 +1,96 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+.cocktail-item-grid {
+  background: #fff;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.cocktail-item-grid:hover {
+    box-shadow: 9px 9px 7px 0px rgba(0, 0, 0, 0.5);
+}
+.cocktail-item-content-grid {
+  padding: 20px;
+}
+
+/* background */
+.wrap-cocktail-image-grid-background {
+  background-color: #f1f5f8;
+  height: 25vw;
+}
+.img-background {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+}
+
+/* img */
+.wrap-cocktail-image-grid {
+  background: green;
+  position: relative;
+}
+
+.wrap-cocktail-image-grid img {
+  border-radius: 100px;
+}
+
+.wrap-button-cocktail-grid a {
+  color: #fff !important;
+}
+.cocktail-item-content-grid p {
+  margin: 0 5px 7px 0;
+  text-align: left;
+}
+.cocktail-item-content-grid .cocktail-glass-type {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.cocktail-item-content-grid .cocktail-alcohol-type {
+  font-size: 17px;
+  color: gray;
+  letter-spacing: 2px;
+}
+.cocktail-item-content-grid .wrap-button-cocktail-grid {
+  margin-top: 1rem;
+}
+.cocktail-item-content-grid .wrap-button-cocktail-grid a {
+  color: #fff !important;
+  letter-spacing: 2px;
+}
+/* Cocktail Single Page */
+.cocktail-single-page {
+  margin-top: 3rem;
+}
+.cocktail-single-page .title {
+  text-align: center;
+  margin: 3rem 0;
+}
+.cocktail-single-page-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin: 0 auto;
+  width: 85vw;
+  column-gap: 3rem;
+}
+.cocktail-single-page-thumbnail img {
+  border-radius: 5px;
+}
+.cocktail-single-page .wrap-button {
+  text-align: center;
+  margin: 2rem 0;
+}
+.cocktail-single-page .wrap-button a {
+  color: #fff !important;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
